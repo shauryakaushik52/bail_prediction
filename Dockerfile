@@ -4,7 +4,8 @@ WORKDIR / app
 
 COPY requirements.txt .
 
-RUN pip install --n0-cache-dir -r requirements.txt
+RUN python -m pip install --upgrade pip && \
+    python -m pip install --n0-cache-dir -r requirements.txt
 
 COPY . .
 
