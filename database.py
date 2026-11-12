@@ -23,6 +23,7 @@ elif os.getenv("DB_USER"):
         port=int(os.getenv("DB_PORT", 5432)),
         database=os.getenv("DB_NAME"),
     )
+
     engine = create_engine(url)
 else:
     engine = create_engine("sqlite:///./local.db")
@@ -60,7 +61,7 @@ else:
 
 
 
-engine = create_engine(url)
+
 
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
