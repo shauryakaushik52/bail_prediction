@@ -6,7 +6,7 @@ API_URL = "http://127.0.0.1:8000/predict"
 
 st.title(" BAIL PREDICTION SYSTEM ")
 
-st.image("C:\\Users\\Shaurya Kaushik\\Downloads\\indialaw.jpg" )
+st.image("indialaw.jpg" )
 
 with st.expander("Founder Message ") :
    st.write("""
